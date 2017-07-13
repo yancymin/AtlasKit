@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>people</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="people">
+            <g>
+                <circle id="Oval-3" fill="currentColor" cx="16" cy="9" r="3"></circle>
+                <circle id="Oval-3-Copy" fill="currentColor" cx="8" cy="6" r="3"></circle>
+                <path d="M11,14.9997846 C11,13.8953341 11.8874333,13 12.999615,13 L19.000385,13 C20.1047419,13 21,13.8854554 21,15.000312 L21,18.7298664 C21,21.7567112 11,21.7567112 11,18.7298664 C11,21.7567112 11,14.9997846 11,14.9997846 Z" id="Rectangle-7" fill="currentColor"></path>
+                <path d="M12.9999847,12.0002544 C12.995731,10.8850202 12.1023654,10.0002544 11,10.0002544 L5,10.0002544 C3.887,10.0002544 3,10.8972544 3,12.0032544 L3,15.8292544 C3,17.7503065 7.05441023,18.3475937 10,17.8131882 C10,16.3823354 10,15.0059623 10,15.0059623 C10,13.3459556 11.3416228,12.0002544 12.997152,12.0002544 L12.9999847,12.0002544 Z" id="Combined-Shape" fill="currentColor"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "name": "@atlaskit/field-base",
+  "version": "7.0.1",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React presentational component that wraps fields and provides styles for focus/hover states",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/field-base; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "dependencies": {
+    "@atlaskit/icon": "^6.5.2",
+    "@atlaskit/inline-dialog": "^3.0.0",
+    "@atlaskit/spinner": "^2.2.1",
+    "@atlaskit/util-shared-styles": "^2.0.1",
+    "babel-runtime": "^6.11.6",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/avatar": "^2.0.0",
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/field-base": "*",
+    "@atlaskit/input": "^1.0.0",
+    "@atlaskit/util-readme": "^3.1.0",
+    "@atlaskit/calendar": "^2.0.13",
+    "uid": "0.0.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Matias C"
+    },
+    {
+      "name": "Luke B"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui",
+    "internal"
+  ]
+}

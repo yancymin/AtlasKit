@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "panel",
+      "content": [
+        {
+          "type": "rule"
+        }
+      ],
+      "attrs": {
+        "panelType": "warning"
+      }
+    }
+  ]
+}

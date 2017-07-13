@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/bold</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/bold" fill="currentColor">
+            <g id="bold" transform="translate(7.000000, 6.000000)">
+                <path d="M0,0.500347316 C0,0.224013124 0.221497271,0 0.497227308,0 L5.83193277,0 C6.9075684,0 9,0.5 9,3 C9,5 8,5.5 8,5.5 C8,5.5 10,6 10,8.5 C10,9 10,12 6,12 L0.491005182,12 C0.219830508,12 0,11.7709994 0,11.4996527 L0,0.500347316 Z M2,10 L5.5,10 C6.5,10 7.5,9.75 7.5,8.5 C7.5,7.25 6.39611816,7 5.5,7 L2,7 L2,10 Z M2,5.02521014 L5,5.02521014 C5.5042042,5.02521014 7,5.02521014 7,3.5 C7,1.97478986 5,2 5,2 L2,2 L2,5.02521014 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

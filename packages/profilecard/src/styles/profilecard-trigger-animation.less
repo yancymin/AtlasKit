@@ -1,0 +1,34 @@
+@import './styles.less';
+
+@animationMovementDistance: (12);
+@animationDelay: 0.1s;
+@animationTime: @animationDelay + 1s;
+
+//************** Animations ***************//
+
+// define the props to transform for each animation
+@slideUp: 'transform', 'translateY(XXpx)', @animationMovementDistance, 0;
+@slideDown: 'transform', 'translateY(XXpx)', -@animationMovementDistance, 0;
+@slideLeft: 'transform', 'translateX(XXpx)', @animationMovementDistance, 0;
+@slideRight: 'transform', 'translateX(XXpx)', -@animationMovementDistance, 0;
+@fadeIn: 'opacity', 'XX', 0, 1;
+
+// then create the keyframes for each
+.createBoldAnimation(@slideUp @fadeIn, 'slide-up');
+.createBoldAnimation(@slideDown @fadeIn, 'slide-down');
+.createBoldAnimation(@slideLeft @fadeIn, 'slide-left');
+.createBoldAnimation(@slideRight @fadeIn, 'slide-right');
+
+// and create classes to apply them
+.slideUpAnimation {
+  animation: slide-up @animationTime @animationDelay backwards;
+}
+.slideDownAnimation {
+  animation: slide-down @animationTime @animationDelay backwards;
+}
+.slideLeftAnimation {
+  animation: slide-left @animationTime @animationDelay backwards;
+}
+.slideRightAnimation {
+  animation: slide-right @animationTime @animationDelay backwards;
+}

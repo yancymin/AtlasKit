@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="arrow-down" fill="currentColor">
+            <g id="Clip-2">
+                <path d="M11.001,4 L11.001,17.586 L5.707,12.292 C5.317,11.903 4.681,11.903 4.293,12.292 C3.902,12.681 3.902,13.317 4.293,13.706 L11.288,20.701 C11.29,20.703 11.29,20.706 11.291,20.709 C11.487,20.903 11.743,21 12.001,21 C12.258,21 12.514,20.903 12.709,20.709 C12.711,20.706 12.712,20.704 12.712,20.702 L19.712,13.703 C19.905,13.51 20.002,13.253 20.002,12.997 C20.002,12.74 19.905,12.484 19.712,12.289 C19.323,11.9 18.687,11.9 18.298,12.289 L12.999,17.586 L12.999,4 C12.999,3.45 12.549,3 12.001,3 C11.451,3 11.001,3.45 11.001,4 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

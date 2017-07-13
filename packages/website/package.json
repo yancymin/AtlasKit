@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "name": "@atlaskit/website",
+  "version": "229.0.0",
+  "description": "The AtlasKit Website",
+  "scripts": {
+    "build": "yarn run build-data && NODE_ENV=production webpack -p --progress && cp dist/index.html dist/404.html",
+    "deploy": "yarn run build && netlify -t $NETLIFY_TOKEN deploy -s $NETLIFY_SITE_ID -p dist",
+    "build-data": "node ./build && prettier --single-quote --trailing-comma es5 --write src/data.js",
+    "start": "yarn run build-data && webpack-dev-server"
+  },
+  "dependencies": {
+    "@atlaskit/button": "^3.0.0",
+    "@atlaskit/button-group": "^1.0.11",
+    "@atlaskit/css-reset": "^1.0.5",
+    "@atlaskit/dropdown-menu": "^1.1.13",
+    "@atlaskit/dynamic-table": "^2.1.3",
+    "@atlaskit/icon": "^7.0.1",
+    "@atlaskit/inline-message": "^2.0.0",
+    "@atlaskit/lozenge": "^3.0.0",
+    "@atlaskit/navigation": "^8.0.2",
+    "@atlaskit/page": "^3.0.4",
+    "@atlaskit/util-shared-styles": "^1.6.1",
+    "axios": "^0.16.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-react-flow-props-to-prop-types": "^0.14.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babylon-options": "^1.1.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "html-webpack-plugin": "^2.28.0",
+    "isomorphic-fetch": "^2.2.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "prismjs": "^1.6.0",
+    "prismjs-loader": "^0.0.4",
+    "prop-types": "^15.5.8",
+    "raw-loader": "^0.5.1",
+    "react": "^15.3.2",
+    "react-docgen": "^2.14.1",
+    "react-dom": "^15.3.2",
+    "react-helmet": "^5.0.3",
+    "react-media": "^1.5.1",
+    "react-router-dom": "^4.0.0",
+    "react-transition-group": "^1.1.3",
+    "semver": "^5.3.0",
+    "style-loader": "^0.16.1",
+    "styled-components": "^1.3.0",
+    "svg-url-loader": "^2.0.2",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Jed Watson"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "devDependencies": {
+    "netlify-cli": "^1.2.2",
+    "prettier": "^1.3.0"
+  }
+}

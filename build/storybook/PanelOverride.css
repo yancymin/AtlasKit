@@ -1,0 +1,4 @@
+.Pane.vertical.Pane2,
+.Pane.vertical.Pane1 {
+  overflow-y: auto;
+}

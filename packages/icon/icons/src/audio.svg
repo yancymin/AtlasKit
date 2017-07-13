@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>audio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="audio" fill="currentColor">
+            <g id="Combined-Shape">
+                <path d="M17,8.5 L10,8.5 L10,17 C10,18.6568542 8.65685425,20 7,20 C5.34314575,20 4,18.6568542 4,17 C4,15.3431458 5.34314575,14 7,14 C7.35063542,14 7.68722107,14.0601542 8,14.1707057 L8,7.75 L8,5.99359751 C8,5.44484876 8.44483697,5 8.9955775,5 L18.0044225,5 C18.5542648,5 19,5.45756388 19,5.99359751 L19,7.75 L19,17 C19,18.6568542 17.6568542,20 16,20 C14.3431458,20 13,18.6568542 13,17 C13,15.3431458 14.3431458,14 16,14 C16.3506354,14 16.6872211,14.0601542 17,14.1707057 L17,8.5 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

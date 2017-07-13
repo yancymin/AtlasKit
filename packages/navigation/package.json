@@ -1,0 +1,74 @@
+{
+  "name": "@atlaskit/navigation",
+  "version": "15.4.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component that renders a sidebar, for navigation purposes.",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Navigation",
+    "pattern": true
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/navigation; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/avatar": "^4.0.5",
+    "@atlaskit/blanket": "^2.0.4",
+    "@atlaskit/field-base": "^7.0.1",
+    "@atlaskit/icon": "^7.0.0",
+    "@atlaskit/util-common": "^1.0.0",
+    "@atlaskit/util-shared-styles": "^2.3.1",
+    "babel-runtime": "^6.11.6",
+    "chromatism": "^2.5.8",
+    "classnames": "^2.2.5",
+    "invariant": "^2.2.2",
+    "keycode": "^2.1.2",
+    "memoize-one": "^2.0.0",
+    "prop-types": "^15.5.10",
+    "react-transition-group": "^1.2.0",
+    "styled-components": "^1.3.0"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Alex R"
+    }
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@atlaskit/badge": "^4.0.5",
+    "@atlaskit/button": "^3.0.0",
+    "@atlaskit/dropdown-menu": "^3.0.1",
+    "@atlaskit/logo": "^3.1.0",
+    "@atlaskit/navigation": "*",
+    "@atlaskit/page": "^4.0.1",
+    "@atlaskit/tooltip": "^1.2.0",
+    "@atlaskit/util-common-test": "*",
+    "@atlaskit/util-readme": "^1.0.0",
+    "karma-sinon-chai": "^1.2.4",
+    "lodash.debounce": "^4.0.8",
+    "react-lorem-component": "0.11.0",
+    "react-router": "^3.0.0",
+    "react-router-dom": "^4.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

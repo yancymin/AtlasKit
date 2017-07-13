@@ -1,0 +1,11 @@
+# Run this via:
+# docker-compose -f docker-compose-test.yml up --force-recreate
+version: '2'
+services:
+  atlaskit-unit-tests:
+    build:
+      context: .
+    image: atlassianlabs/atlaskit:2016-11-16 # You can disable this, to use the local docker file
+    volumes:
+      - .:/usr/src/app/
+    command: 'bash -c "npm run postinstall && npm test"' # npm run postinstall is needed to set up the symlinks between packages correctly in docker

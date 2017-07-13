@@ -1,0 +1,51 @@
+{
+  "name": "@atlaskit/app-switcher",
+  "version": "2.5.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "akapp-switcher React component",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/app-switcher; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/dropdown-menu": "^3.0.0",
+    "@atlaskit/droplist": "^3.3.2",
+    "@atlaskit/logo": "^3.0.0",
+    "@atlaskit/spinner": "^2.1.0",
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "babel-runtime": "^6.11.6",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "@atlaskit/util-readme": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "styled-components": "^1.3.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "James McA"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "fabric",
+    "ui"
+  ]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>bitbucket/clone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Bitbucket" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="bitbucket/clone" fill="currentColor">
+            <g id="clone">
+                <path d="M8,4 L4.99508929,4 C3.8926228,4 3,4.8992496 3,6.0085302 L3,13.9914698 C3,15.0980496 3.8932319,16 4.99508929,16 L19.0049107,16 C20.1073772,16 21,15.1007504 21,13.9914698 L21,6.0085302 C21,4.90195036 20.1067681,4 19.0049107,4 L16,4 L16,6 L19,6 L19,14 L5,14 L5,6 L8,6 L8,4 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                <rect id="Rectangle-11-Copy" x="10" y="17" width="4" height="3"></rect>
+                <path d="M9,20 C9,19.4477153 9.45097518,19 9.99077797,19 L14.009222,19 C14.5564136,19 15,19.4438648 15,20 L15,21 L9,21 L9,20 Z" id="Rectangle-11-Copy-2"></path>
+                <path d="M11.28875,8.298 L9.29175,10.294 C8.90275,10.684 8.90275,11.318 9.29175,11.709 C9.68275,12.099 10.31675,12.099 10.70675,11.709 L11.99975,10.415 L13.29275,11.709 C13.68375,12.099 14.31575,12.099 14.70675,11.709 C15.09775,11.318 15.09775,10.684 14.70675,10.294 L12.71175,8.298 C12.51175,8.099 12.25575,8 12.00075,8 C11.74275,8 11.48575,8.101 11.28875,8.298 Z" id="Clip-2" transform="translate(12.000000, 10.000750) scale(1, -1) translate(-12.000000, -10.000750) "></path>
+                <rect id="Rectangle-8" x="11" y="3" width="2" height="7" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

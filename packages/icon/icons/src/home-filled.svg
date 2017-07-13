@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>home-filled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="home-filled" fill="currentColor">
+            <g transform="translate(3.000000, 3.000000)">
+                <path d="M3,7.9955775 C3,7.44573523 3.45576096,7 4.00247329,7 L13.9975267,7 C14.5511774,7 15,7.44483697 15,7.9955775 L15,17.0044225 C15,17.5542648 14.544239,18 13.9975267,18 L4.00247329,18 C3.44882258,18 3,17.555163 3,17.0044225 L3,7.9955775 Z M7,13.9979131 L7,18 L11,18 L11,13.9979131 C11,12.8982606 10.1045695,12 9,12 C7.88772964,12 7,12.8944962 7,13.9979131 Z" id="Combined-Shape"></path>
+                <path d="M8.64718933,0.352810666 C8.84204128,0.157958716 9.15621185,0.156211853 9.35281067,0.352810666 L17.2937851,8.2937851 C17.6838168,8.68381682 17.5550537,9 17.0066023,9 L0.993397683,9 C0.444759292,9 0.320314765,8.67968524 0.706214905,8.2937851 L8.64718933,0.352810666 Z" id="Triangle-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

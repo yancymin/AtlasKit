@@ -1,0 +1,10 @@
+{
+  "extends": "../../build/types/tsconfig.base",
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/json-schema"
+  ]
+}

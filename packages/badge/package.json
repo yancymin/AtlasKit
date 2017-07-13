@@ -1,0 +1,49 @@
+{
+  "name": "@atlaskit/badge",
+  "version": "4.1.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component that indicates values",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Badge"
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/badge; } || ../../node_modules/.bin/not-in-publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/util-shared-styles": "^2.0.1",
+    "babel-runtime": "^6.11.6",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/badge": "*",
+    "@atlaskit/util-readme": "^3.0.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Sean C"
+    }
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

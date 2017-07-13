@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>unlock-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="unlock-circle" fill="currentColor">
+            <g id="room-public">
+                <path d="M11,10.5 L11,9.98 C11,8.886 10.114,8 9.02,8 L8.98,8 C7.886,8 7,8.886 7,9.98 L7,11 L8,11 L8,9.99 C8,9.443 8.443,9 8.99,9 L9.01,9 C9.557,9 10,9.443 10,9.99 L10,10.5 L10,12 L11,12 L11,10.5 Z M12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 Z M9,15.0010434 C9,15.5527519 9.45097518,16 9.99077797,16 L14.009222,16 C14.5564136,16 15,15.5573397 15,15.0010434 L15,13 C15,12.448 14.552,12 14,12 L13,12 L11,12 L10,12 C9.448,12 9,12.448 9,13 L9,15.0010434 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

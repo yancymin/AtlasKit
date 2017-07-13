@@ -1,0 +1,51 @@
+// use flex to create multiple rows of flex rows
+.story-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fixed-parent {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+}
+
+.absolute-parent {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.relative-parent {
+  margin-left: 200px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.static-parent {
+  margin-left: 200px;
+  margin-top: 200px;
+  position: static;
+}
+
+.alignment-container {
+  height: 100px;
+  width: 100px;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.aligned-box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+  background: #fea;
+}

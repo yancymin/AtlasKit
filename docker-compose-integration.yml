@@ -1,0 +1,36 @@
+version: '2'
+services:
+  selenium-hub:
+    image: selenium/hub
+    ports:
+      - "4444:4444"
+    logging:
+      driver: none
+  selenium-chrome:
+    # You can attach a VNC server (vnc://:secret@localhost:5900)
+    image: selenium/node-chrome-debug:latest
+    # Uncomment the next line for production mode
+    # image: selenium/node-chrome:latest
+    ports:
+      - "5900:5900"
+    depends_on:
+      - selenium-hub
+    links:
+      - "selenium-hub:hub"
+      - "dev-server:dev"
+    environment:
+        - HUB_PORT_4444_TCP_ADDR=hub
+    logging:
+      driver: none
+  dev-server:
+    build: .
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - "9001:9001"
+    environment:
+      SCOPE:
+    command: 'bash -c
+            "
+              yarn run storybook \"$SCOPE\"
+            "'

@@ -1,0 +1,52 @@
+{
+  "name": "@atlaskit/blanket",
+  "version": "2.0.4",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component that covers the underlying UI for a layered component.",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Blanket"
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/blanket; } || ../../node_modules/.bin/not-in-publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/blanket": "*",
+    "@atlaskit/util-readme": "^3.0.0",
+    "@atlaskit/button": "^1.0.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Nadia M"
+    },
+    {
+      "name": "Luke B"
+    }
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

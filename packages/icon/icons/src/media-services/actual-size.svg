@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>media-services/actual-size</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media-services" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="media-services/actual-size" fill="currentColor">
+            <g id="actual-size">
+                <path d="M3,15.9922083 C3,15.4450167 3.32258606,15.3240164 3.71184039,15.7132707 L8.28815961,20.2895899 C8.6812982,20.6827285 8.54902482,21.0014303 8.00922203,21.0014303 L3.99077797,21.0014303 C3.44358641,21.0014303 3,20.5504551 3,20.0106524 L3,15.9922083 Z" id="Rectangle-7"></path>
+                <path d="M3.00143033,3.52077549 C3.00143033,2.96967933 3.31398087,2.83533029 3.70725449,3.22841783 L8.7757446,8.29450979 C9.16556052,8.68414128 9.03616261,9 8.48324854,9 L3.99975055,9 C3.44839352,9 3.00143033,8.55480458 3.00143033,8.00215213 L3.00143033,3.52077549 Z" id="Rectangle-7" transform="translate(6.001430, 6.000000) rotate(-270.000000) translate(-6.001430, -6.000000) "></path>
+                <path d="M15,15.9922083 C15,15.4450167 15.3225861,15.3240164 15.7118404,15.7132707 L20.2881596,20.2895899 C20.6812982,20.6827285 20.5490248,21.0014303 20.009222,21.0014303 L15.990778,21.0014303 C15.4435864,21.0014303 15,20.5504551 15,20.0106524 L15,15.9922083 Z" id="Rectangle-7" transform="translate(18.000000, 18.001430) scale(-1, 1) translate(-18.000000, -18.001430) "></path>
+                <path d="M15,3.9922083 C15,3.44501673 15.3225861,3.32401639 15.7118404,3.71327072 L20.2881596,8.28958994 C20.6812982,8.68272853 20.5490248,9.00143033 20.009222,9.00143033 L15.990778,9.00143033 C15.4435864,9.00143033 15,8.55045515 15,8.01065236 L15,3.9922083 Z" id="Rectangle-7" transform="translate(18.000000, 6.001430) scale(-1, 1) rotate(-270.000000) translate(-18.000000, -6.001430) "></path>
+                <rect id="Rectangle-8" x="7.00143033" y="8.00143033" width="2" height="8" rx="1"></rect>
+                <rect id="Rectangle-8-Copy" x="15" y="8.00143033" width="2" height="8" rx="1"></rect>
+                <rect id="Rectangle-8-Copy-2" x="11" y="9.00143033" width="2" height="2" rx="1"></rect>
+                <rect id="Rectangle-8-Copy-3" x="11" y="13.0014303" width="2" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

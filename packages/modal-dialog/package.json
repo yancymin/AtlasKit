@@ -1,0 +1,59 @@
+{
+  "name": "@atlaskit/modal-dialog",
+  "version": "2.1.2",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component that displays content in a layer blocking the interaction with the page.",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Modal Dialog"
+  },
+  "types": "src/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/modal-dialog; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/blanket": "^2.0.4",
+    "@atlaskit/util-shared-styles": "^2.3.1",
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Ben G"
+    }
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@atlaskit/button-group": "^1.0.0",
+    "@atlaskit/button": "^3.0.0",
+    "@atlaskit/dropdown-menu": "^3.0.1",
+    "@atlaskit/field-text": "^3.0.0",
+    "@atlaskit/inline-dialog": "^3.2.0",
+    "@atlaskit/layer": "^2.1.4",
+    "@atlaskit/modal-dialog": "*",
+    "@atlaskit/navigation": "^13.3.0",
+    "@atlaskit/page": "^4.0.1",
+    "react-lorem-component": "0.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "ui",
+    "atlaskit"
+  ]
+}

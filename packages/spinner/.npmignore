@@ -1,0 +1,3 @@
+# We npmignore the root index.js file so that when we publish, the package is resolved using the package.json.
+# This is so that, locally (when linked), we can point to src/index.js and not have to prepublish every package
+index.js

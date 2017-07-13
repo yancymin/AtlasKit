@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/close" fill="currentColor">
+            <g id="remove" transform="translate(3.000000, 3.000000)">
+                <path d="M10,8 L10,3.50034732 C10,3.22900057 9.77404508,3 9.49531555,3 L8.50468445,3 C8.21403503,3 8,3.22401312 8,3.50034732 L8,8 L3.50034732,8 C3.22900057,8 3,8.22595492 3,8.50468445 L3,9.49531555 C3,9.78596497 3.22401312,10 3.50034732,10 L8,10 L8,14.4996527 C8,14.7709994 8.22595492,15 8.50468445,15 L9.49531555,15 C9.78596497,15 10,14.7759869 10,14.4996527 L10,10 L14.4996527,10 C14.7709994,10 15,9.77404508 15,9.49531555 L15,8.50468445 C15,8.21403503 14.7759869,8 14.4996527,8 L10,8 Z" id="Shape" transform="translate(9.000000, 9.000000) rotate(-45.000000) translate(-9.000000, -9.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

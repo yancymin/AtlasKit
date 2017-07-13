@@ -1,0 +1,40 @@
+@import '../node_modules/@atlaskit/util-shared-styles/src/colors.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/grid.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/mixins/headings.less';
+
+@table-border-width: 2px;
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead,
+tbody,
+tfoot {
+  border-bottom: @table-border-width solid @ak-color-N40;
+}
+td,
+th {
+  border: none;
+  padding: (@ak-grid-size / 2) @ak-grid-size;
+  text-align: left;
+}
+th {
+  vertical-align: top;
+}
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}
+td:last-child,
+th:last-child {
+  padding-right: 0;
+}
+caption {
+  .adg-typography-h600();
+
+  margin-bottom: @ak-grid-size;
+  text-align: left;
+}

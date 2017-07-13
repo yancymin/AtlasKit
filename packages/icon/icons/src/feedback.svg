@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>feedback</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="feedback" fill="currentColor">
+            <g transform="translate(5.000000, 5.000000)" id="Shape">
+                <path d="M2.10494117,7.68598158 L0.945399571,7.27344145 C0.432533263,7.09097458 0,6.49199013 0,5.94293349 L0,5.61868232 C0,5.07041238 0.423269805,4.47393698 0.945399571,4.28817437 L12.0546004,0.335758019 C12.5674667,0.153291143 13,0.449759953 13,1.00530089 L13,10.5563149 C13,11.1230545 12.5767302,11.4116204 12.0546004,11.2258578 L8.31357597,9.89488122 L2.10494117,7.68598158 Z M4.35294118,10.3065767 L4.35294118,12.7391228 C4.35294118,13.2772012 4.00456777,13.9082553 3.58540883,14.1427031 L3.12047353,14.402755 C2.69657712,14.6398526 2.35294118,14.3916684 2.35294118,13.8703994 L2.35294118,9.49300699 L4.35294118,10.3065767 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

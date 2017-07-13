@@ -1,0 +1,16 @@
+// For styles that are shared between shadow and host (variable definitions ONLY)
+@import '~@atlaskit/util-shared-styles/src/colors.less';
+@import '~@atlaskit/util-shared-styles/src/fonts.less';
+@import '~@atlaskit/util-shared-styles/src/borders.less';
+@import '~@atlaskit/util-shared-styles/src/grid.less';
+
+
+@default-border-radius: @ak-border-radius;
+@tag-height: 2.5 * @ak-grid-size;
+// button should be square so we make it the same as the tag-height
+@button-width: @tag-height;
+@font-size: @ak-font-size-default;
+@max-width: 25 * @ak-grid-size;
+@max-text-width: @max-width - (@button-width);
+@animation-duration: 250ms;
+@remove-animation: 'max-width', 'XX', @max-width, 0;

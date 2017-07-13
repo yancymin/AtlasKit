@@ -1,0 +1,51 @@
+{
+  "name": "@atlaskit/drag-and-drop",
+  "version": "3.0.1",
+  "config": {
+    "access": "public"
+  },
+  "description": "Drag and drop building blocks - designed for lists",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.js",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/drag-and-drop; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "invariant": "2.2.2",
+    "memoize-one": "3.0.1",
+    "prop-types": "15.5.10",
+    "prop-types-extra": "1.0.1",
+    "raf-schd": "2.0.1",
+    "react-motion": "0.4.7",
+    "react-redux": "5.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "2.2.0",
+    "reselect": "2.5.4"
+  },
+  "devDependencies": {
+    "styled-components": "2.1.0"
+  },
+  "peerDependencies": {
+    "react": "15.6.1"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Alex R"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

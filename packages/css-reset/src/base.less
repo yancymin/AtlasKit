@@ -1,0 +1,189 @@
+@import '../node_modules/@atlaskit/util-shared-styles/src/colors.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/grid.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/fonts.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/mixins/headings.less';
+
+@defaultFont: @ak-font-family;
+@defaultMonospace: @ak-code-font-family;
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #FFF;
+  color: @ak-color-N800;
+  font-family: @defaultFont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42857142857143;
+  letter-spacing: -0.005em;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  text-decoration-skip: ink;
+}
+
+
+// Default margins
+p,
+ul,
+ol,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+form,
+table {
+  margin: (@ak-grid-size * 1.5) 0 0 0;
+}
+
+
+// Links
+a {
+  color: @ak-color-B400;
+  text-decoration: none;
+}
+a:hover {
+  color: @ak-color-B300;
+  text-decoration: underline;
+}
+a:active {
+  color: @ak-color-B500;
+}
+a:focus {
+  outline: 2px solid @ak-color-B100;
+  outline-offset: 2px;
+}
+
+
+// Headings
+h1 {
+  .adg-typography-h800();
+}
+h2 {
+  .adg-typography-h700();
+}
+h3 {
+  .adg-typography-h600();
+}
+h4 {
+  .adg-typography-h500();
+}
+h5 {
+  .adg-typography-h400();
+}
+h6 {
+  .adg-typography-h300();
+}
+
+
+
+// Lists
+ul,
+ol,
+dl {
+  padding-left: (@ak-grid-size * 5);
+
+  [dir="rtl"]& {
+    padding-left: 0;
+    padding-right: (@ak-grid-size * 5);
+  }
+}
+dd,
+dd + dt,
+li + li {
+  margin-top: (@ak-grid-size / 2);
+}
+ul,
+ol {
+  ul,
+  ol {
+    &:not(:first-child) {
+      margin-top: (@ak-grid-size / 2);
+    }
+  }
+}
+
+
+// remove top margin for first element
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+blockquote:first-child,
+pre:first-child,
+form:first-child,
+table:first-child, {
+  margin-top: 0;
+}
+
+
+// Quotes
+blockquote,
+q {
+  color: inherit;
+}
+blockquote {
+  border: none;
+  padding-left: (@ak-grid-size * 5);
+
+  [dir="rtl"] & {
+    padding-left: 0;
+    padding-right: (@ak-grid-size * 5);
+  }
+}
+blockquote::before,
+q:before {
+  content: "\201C";
+}
+blockquote::after,
+q::after {
+  content: "\201D";
+}
+blockquote::before {
+  float: left; // to keep the quotes left of any child elements like blockquote > p
+  margin-left: -1em;
+  text-align: right;
+  width: 1em;
+
+  [dir="rtl"] & {
+    float: right;
+    margin-right: -1em;
+    text-align: left;
+  }
+}
+blockquote > :last-child {
+  display: inline-block; // so the quotes added via pseudos follow it immediately.
+}
+
+
+// Other typographical elements
+small {
+  .adg-typography-h100();
+}
+code,
+kbd {
+  font-family: @defaultMonospace;
+}
+var,
+address,
+dfn,
+cite {
+  font-style: italic;
+}
+abbr {
+  border-bottom: 1px #ccc dotted;
+  cursor: help;
+}

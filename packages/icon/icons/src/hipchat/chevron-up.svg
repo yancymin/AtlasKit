@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>hipchat/chevron-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HipChat" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="hipchat/chevron-up" fill="currentColor">
+            <g id="carat-up">
+                <path d="M11.958,8 C11.714,8.01 11.475,8.107 11.29,8.292 C11.289,8.294 11.289,8.296 11.286,8.298 L4.292,15.292 C4.111,15.473 4.014,15.707 4.001,15.944 L4.001,16.055 C4.014,16.292 4.111,16.526 4.292,16.706 C4.682,17.096 5.317,17.096 5.706,16.706 L12,10.413 L18.293,16.708 C18.489,16.903 18.745,17 19.002,17 C19.258,17 19.515,16.903 19.709,16.708 C20.099,16.321 20.099,15.683 19.709,15.295 L12.712,8.298 C12.711,8.295 12.71,8.294 12.707,8.292 C12.523,8.107 12.283,8.01 12.041,8 L11.958,8 Z" id="Clip-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

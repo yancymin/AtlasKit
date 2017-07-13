@@ -1,0 +1,63 @@
+{
+  "name": "@atlaskit/multi-select",
+  "version": "6.3.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "React component which allows selection of multiple items from a dropdown list. Substitute for the native multiple select element",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Select (Multi)"
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/multi-select; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/droplist": "^4.0.0",
+    "@atlaskit/field-base": "^7.0.1",
+    "@atlaskit/icon": "^6.5.2",
+    "@atlaskit/tag": "^2.1.3",
+    "@atlaskit/tag-group": "^3.0.0",
+    "@atlaskit/util-shared-styles": "^2.0.1",
+    "babel-runtime": "^6.11.6",
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0",
+    "uid": "0.0.2"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "@atlaskit/avatar": "^2.0.2",
+    "@atlaskit/util-readme": "^3.2.1",
+    "@atlaskit/multi-select": "*",
+    "@atlaskit/code": "2.1.1",
+    "@atlaskit/button": "^1.0.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Nadia M"
+    },
+    {
+      "name": "Luke B"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

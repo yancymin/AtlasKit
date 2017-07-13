@@ -1,0 +1,63 @@
+@import '../node_modules/@atlaskit/util-shared-styles/src/colors.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/grid.less';
+
+@grid: @ak-grid-size / 2;
+@fontSize: 3 * @grid;
+@lineHeight: unit(4 * @grid) / unit(@fontSize);
+@fontColor: white;
+@maxWidth: 105 * @grid; // ~420px
+@borderRadius: 3px;
+@leftAndRightTextPadding: 2 * @grid;
+@topAndBottomPadding: @grid / 2;
+@marginDistance: 2 * @grid;
+
+a[href], button {
+  &[data-ak-tooltip] {
+    overflow: visible; // needed for IE11, otherwise doesn't appear for buttons
+    position: relative;
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-color: @ak-color-N900;
+        border-radius: @borderRadius;
+        box-sizing: border-box;
+        color: @fontColor;
+        content: attr(data-ak-tooltip);
+        display: inline-block; // needed for IE + Edge to remove underline
+        font-size: @fontSize;
+        line-height: @lineHeight;
+        max-width: @maxWidth;
+        overflow: hidden;
+        padding: @topAndBottomPadding @leftAndRightTextPadding;
+        pointer-events: none;
+        position: absolute;
+        text-decoration: none; // needed for links, doesn't work in IE11 https://goo.gl/TNrqln
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        z-index: 10000;
+      }
+    }
+
+    &[data-ak-tooltip-position="top"]::after {
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-@marginDistance);
+    }
+    &[data-ak-tooltip-position="right"]::after {
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%) translateX(@marginDistance);
+    }
+    &[data-ak-tooltip-position="bottom"]::after {
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%) translateY(@marginDistance);
+    }
+    &[data-ak-tooltip-position="left"]::after {
+      top: 50%;
+      transform: translateY(-50%) translateX(-@marginDistance);
+      right: 100%;
+    }
+  }
+}

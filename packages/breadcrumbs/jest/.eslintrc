@@ -1,0 +1,4 @@
+{
+  "extends": "@atlaskit/eslint-config-tests"
+}
+

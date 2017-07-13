@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>open</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="open">
+            <g>
+                <path d="M11.776,7.5722 C11.204,7.5722 10.742,8.0352 10.745,8.6082 C10.747,9.1832 11.215,9.6512 11.789,9.6532 L14.91,9.6672 L14.924,12.7882 C14.926,13.3622 15.394,13.8302 15.969,13.8322 C16.543,13.8352 17.006,13.3712 17.005,12.7972 L16.986,8.6362 C16.983,8.0622 16.515,7.5942 15.941,7.5912 L11.78,7.5722 L11.776,7.5722 Z" id="path-1" fill="currentColor"></path>
+                <path d="M13.849,9.3132 L6.778,16.3842 C6.388,16.7752 6.388,17.4092 6.778,17.7992 C7.168,18.1892 7.802,18.1892 8.193,17.7992 L15.264,10.7282 C15.654,10.3372 15.654,9.7042 15.264,9.3132 C15.069,9.1192 14.812,9.0212 14.557,9.0212 C14.3,9.0212 14.044,9.1192 13.849,9.3132 Z" id="Clip-5" fill="currentColor"></path>
+            </g>
+        </g>
+    </g>
+</svg>

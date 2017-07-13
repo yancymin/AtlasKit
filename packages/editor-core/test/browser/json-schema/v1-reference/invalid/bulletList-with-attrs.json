@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "rule"
+            }
+          ]
+        }
+      ],
+      "attrs": {}
+    }
+  ]
+}

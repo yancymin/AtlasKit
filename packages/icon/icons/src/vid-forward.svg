@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>vid-forward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="vid-forward" fill="currentColor">
+            <g id="vid-play">
+                <path d="M3.79109287,4.59668533 C3.35418434,4.26714512 3,4.44463086 3,5.00087166 L3,18.9991283 C3,19.5518945 3.36598969,19.7437007 3.82678783,19.4210079 L13.1732122,12.8757912 C13.6298345,12.5560227 13.6464688,12.0301467 13.2089071,11.7001138 L3.79109287,4.59668533 Z" id="Page-1"></path>
+                <path d="M11.7910929,4.59668533 C11.3541843,4.26714512 11,4.44463086 11,5.00087166 L11,18.9991283 C11,19.5518945 11.3659897,19.7437007 11.8267878,19.4210079 L21.1732122,12.8757912 C21.6298345,12.5560227 21.6464688,12.0301467 21.2089071,11.7001138 L11.7910929,4.59668533 Z" id="Page-1-Copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>

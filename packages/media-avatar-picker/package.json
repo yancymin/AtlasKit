@@ -1,0 +1,68 @@
+{
+  "name": "@atlaskit/media-avatar-picker",
+  "version": "2.2.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "Component that allow users to pick, resize and drag his own and default avatars",
+  "main": "dist/es5/index.js",
+  "jsnext:main": "dist/es2015/index.js",
+  "types": "dist/es5/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && npm run build || ../../node_modules/.bin/not-in-publish",
+    "build": "npm run build/es5 && npm run build/es2015",
+    "build/es5": "../../node_modules/.bin/tsc -p build/es5",
+    "build/es2015": "../../node_modules/.bin/tsc -p build/es2015",
+    "lint": "../../node_modules/.bin/tslint --project . '*.{ts,tsx,d.ts}' '{src,stories}/**/*.{ts,tsx,d.ts}'",
+    "validate/typescript": "../../build/bin/validate.typescript.sh",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/icon": "^6.0.0",
+    "@atlaskit/media-card": "^8.0.0",
+    "@atlaskit/modal-dialog": "^1.2.15",
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "@atlaskit/field-range": "^2.0.0",
+    "tslib": "^1.2.0",
+    "typestyle": "^0.21.4"
+  },
+  "author": "Atlassian Pty. Ltd",
+  "maintainers": [
+    {
+      "name": "Hector Z"
+    },
+    {
+      "name": "Michael J"
+    },
+    {
+      "name": "Aleksandr Motsjonov"
+    },
+    {
+      "name": "Vladimir Vinogradov"
+    }
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@atlaskit/media-core": "^5.4.0",
+    "react": "^15.3.2",
+    "styled-components": "^1.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "devDependencies": {
+    "@atlaskit/media-core": "^5.4.0",
+    "@atlaskit/media-test-helpers": "^4.1.0",
+    "akutil-common-test": "*"
+  },
+  "keywords": [
+    "media",
+    "ui"
+  ]
+}

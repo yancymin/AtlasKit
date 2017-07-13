@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/more" fill="currentColor">
+            <g id="more" transform="translate(5.000000, 10.000000)">
+                <path d="M1.5,3.5 C2.32842712,3.5 3,2.82842712 3,2 C3,1.17157288 2.32842712,0.5 1.5,0.5 C0.671572875,0.5 0,1.17157288 0,2 C0,2.82842712 0.671572875,3.5 1.5,3.5 Z M7,3.5 C7.82842712,3.5 8.5,2.82842712 8.5,2 C8.5,1.17157288 7.82842712,0.5 7,0.5 C6.17157288,0.5 5.5,1.17157288 5.5,2 C5.5,2.82842712 6.17157288,3.5 7,3.5 Z M12.5,3.5 C13.3284271,3.5 14,2.82842712 14,2 C14,1.17157288 13.3284271,0.5 12.5,0.5 C11.6715729,0.5 11,1.17157288 11,2 C11,2.82842712 11.6715729,3.5 12.5,3.5 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

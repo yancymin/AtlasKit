@@ -1,0 +1,183 @@
+@import './styles.less';
+
+@error-color: @ak-color-N800;
+@error-sub-color: @ak-color-N90;
+
+.cardAnimationWrapper {
+  .font-smoothing;
+  background-color: @card-bg;
+  border-radius: @ak-border-radius;
+  box-shadow: @card-shadow;
+  cursor: default;
+  font-family: @ak-font-family;
+  font-size: @ak-font-size-default;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.25s ease;
+  width: @ak-grid-size * 45;
+}
+
+.spinnerContainer {
+  align-items: center;
+  display: flex;
+  height: @ak-grid-size * 12;
+  justify-content: center;
+  position: relative;
+}
+
+.errorMessage {
+  text-align: center;
+  padding: @ak-grid-size * 3;
+
+  svg {
+    color: @error-sub-color;
+  }
+
+  p {
+    color: @error-color;
+    line-height: @ak-grid-size * 3;
+    margin: @ak-grid-size 0;
+
+    span {
+      color: @error-sub-color;
+    }
+  }
+}
+
+.profilecard {
+  background-image: linear-gradient(
+    to bottom,
+    @ak-color-B500 0%,
+    @ak-color-B500 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% (@ak-grid-size * 12);
+  box-sizing: content-box;
+  padding: @ak-grid-size * 3;
+}
+
+.avatarWrapper {
+  position: absolute;
+  top: @ak-grid-size * 3;
+  left: @ak-grid-size * 3;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: @ak-grid-size * 17;
+}
+
+.detailsGroup {
+  display: flex;
+  flex-direction: column;
+  margin-left: @ak-grid-size * 14;
+  width: @ak-grid-size * 25;
+}
+
+.detailsFullname {
+  @font-size: 18px;
+  @line-height: 24px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: @font-size;
+  color: #fff;
+  margin: (@ak-grid-size * 1.5) 0 0 0;
+  line-height: unit(@line-height / @font-size);
+}
+
+.detailsMeta {
+  @font-size: 14px;
+  @line-height: 24px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: @font-size;
+  color: #fff;
+  margin: 0 0 (@ak-grid-size * 1.5) 0;
+  line-height: unit(@line-height / @font-size);
+}
+
+.noDetailsMeta .detailsFullname {
+  margin: (@ak-grid-size * 4.5) 0 (@ak-grid-size * 1.5) 0;
+}
+
+.detailsLabel {
+  line-height: @ak-grid-size * 3;
+  font-size: @ak-grid-size * 1.5;
+  margin: (@ak-grid-size * 2) 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .detailsLabelIcon {
+    display: inline-block;
+    color: @ak-color-N60;
+    width: @ak-grid-size * 3;
+    height: @ak-grid-size * 3;
+    vertical-align: top;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.presence {
+    .detailsLabelIcon {
+      width: @ak-grid-size * 2;
+      height: @ak-grid-size * 2;
+      line-height: @ak-grid-size * 2;
+      padding: @ak-grid-size * 0.5;
+    }
+  }
+
+  span.label {
+    color: @ak-color-N800;
+    padding-left: @ak-grid-size * 0.5;
+  }
+}
+
+.detailsLabel + .detailsLabel {
+  margin-top: @ak-grid-size * 0.5;
+}
+
+.actionsFlexSpacer {
+  flex: 1 0 auto;
+}
+
+.actionsWrapper {
+  user-select: none;
+  margin: (@ak-grid-size * 2) 0 0 0;
+  text-align: right;
+
+  button {
+    margin-left: 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+[dir=rtl] {
+  .avatarWrapper {
+    left: auto;
+    right: @ak-grid-size * 3;
+  }
+
+  .detailsWrapper {
+    position: relative;
+    left: auto;
+    right: @ak-grid-size * 14;
+  }
+
+  .actionsWrapper {
+    text-align: left;
+  }
+}

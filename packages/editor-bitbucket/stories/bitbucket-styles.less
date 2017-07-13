@@ -1,0 +1,114 @@
+.ProseMirror {
+  /**/
+  /* OVERRIDES FOR AK-CSS-RESET */
+  /* Since bitbucket doesn't use ak-css-reset need to override some rules in order to look more bitbucketish */
+  /**/
+
+  min-height: 3.2rem;
+
+  blockquote:before,
+  blockquote:after {
+    content: '';
+  }
+
+  blockquote > :last-child {
+    display: block;
+  }
+
+  /**/
+  /* STYLES FROM BITBUCKET */
+  /**/
+
+  blockquote,
+  pre {
+    margin: 10px 0 0 0;
+  }
+
+  blockquote:first-child,
+  pre:first-child {
+    margin-top: 0;
+  }
+
+  blockquote {
+    padding: 10px 30px;
+
+    color: #707070;
+    border-left: 1px solid #ccc;
+  }
+
+  blockquote > cite {
+    display: block;
+
+    margin-top: 10px;
+  }
+
+  code,
+  pre {
+    font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  li,
+  p {
+    word-wrap: break-word;
+  }
+
+  li > p {
+    margin-bottom: 10px;
+  }
+
+  pre {
+    overflow-x: auto;
+
+    padding: 5px 10px;
+
+    word-wrap: normal;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #f5f5f5;
+  }
+
+  pre > code {
+    margin: 0;
+    padding: 1px 3px;
+
+    border: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    display: inline-block;
+    overflow-x: auto;
+
+    box-sizing: border-box;
+    max-width: 100%;
+
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+
+  > ul {
+    list-style-type: disc;
+  }
+
+  > ul > li > ul {
+    list-style-type: circle;
+  }
+
+  > ul > li > ul > li > ul {
+    list-style-type: square;
+  }
+
+  ul > li > ul {
+    margin-top: 0;
+  }
+}
+
+#root input {
+  font-size: 14px;
+}

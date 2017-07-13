@@ -1,0 +1,211 @@
+@import '../node_modules/@atlaskit/util-shared-styles/src/colors.less';
+
+@ak-color-B200A: fade(@ak-color-B200, 60%);
+@ak-color-B75A: fade(@ak-color-B75, 60%);
+
+.ak-button {
+  align-items: baseline;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border-width: 0;
+  display: inline-flex;
+  font-style: normal;
+  font-size: inherit;
+  height: 2.28571429em;
+  line-height: 2.28571429em;
+  margin: 0;
+  outline: none;
+  padding: 0 8px;
+  text-align: center;
+  transition: background 0.1s ease-out, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+    transition: background 0s ease-out, box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38);
+  }
+  &:active {
+    transition-duration: 0s;
+  }
+  &:focus {
+    outline: none;
+    transition-duration: 0s, 0.2s;
+  }
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  // Default appearance
+  &__appearance-default {
+    background: @ak-color-N20A;
+    color: @ak-color-N400;
+    text-decoration: none;
+
+    &:hover {
+      background: @ak-color-N30A;
+    }
+    &:active {
+      background: @ak-color-B75A;
+      color: @ak-color-B400;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px @ak-color-B200A;
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:hover {
+      background: @ak-color-N20A;
+      color: @ak-color-N70;
+      text-decoration: none;
+
+      &:focus {
+        box-shadow: 0 0 0 2px @ak-color-B200A;
+      }
+    }
+  }
+
+  // Subtle appearance
+  &__appearance-subtle {
+    background: none;
+    color: @ak-color-N400;
+    text-decoration: none;
+
+    &:hover {
+      background: @ak-color-N30A;
+    }
+    &:active {
+      background: @ak-color-B75A;
+      color: @ak-color-B400;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px @ak-color-B200A;
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:hover {
+      background: @ak-color-N20A;
+      color: @ak-color-N70;
+      text-decoration: none;
+
+      &:focus {
+        box-shadow: 0 0 0 2px @ak-color-B200A;
+      }
+    }
+  }
+
+  // Primary appearance
+  &__appearance-primary {
+    background: @ak-color-B400;
+    color: @ak-color-N0;
+    text-decoration: none;
+
+    &:hover {
+      background: @ak-color-B300;
+    }
+    &:active {
+      background: @ak-color-B500;
+      color: @ak-color-N0;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px @ak-color-B200A;
+    }
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:hover {
+      background: @ak-color-B400;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      &:focus {
+        box-shadow: 0 0 0 2px @ak-color-B200A;
+      }
+    }
+  }
+
+  // Link appearance
+  &__appearance-link {
+    background: none;
+    color: @ak-color-B400;
+    text-decoration: none;
+
+    &:hover {
+      background: none;
+      color: @ak-color-B300;
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      background: none;
+      color: @ak-color-B500;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px @ak-color-B200A;
+    }
+
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:hover {
+      background: none;
+      color: @ak-color-N70;
+      text-decoration: none;
+
+      &:focus {
+        box-shadow: 0 0 0 2px @ak-color-B200A;
+      }
+    }
+  }
+
+  // Subtle link appearance
+  &__appearance-subtle-link {
+    background: none;
+    color: @ak-color-N500;
+    text-decoration: none;
+
+    &:hover {
+      background: none;
+      color: @ak-color-B300;
+      text-decoration: underline;
+    }
+    &:active {
+      text-decoration: none;
+      background: none;
+      color: @ak-color-B500;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px @ak-color-B200A;
+    }
+
+    &[disabled],
+    &[disabled]:active,
+    &[disabled]:focus {
+      background: none;
+      color: @ak-color-N70;
+      text-decoration: none;
+
+      &:focus {
+        box-shadow: 0 0 0 2px @ak-color-B200A;
+      }
+    }
+  }
+
+  // Compact spacing
+  &__spacing-compact {
+    height: 1.71428571em;
+    line-height: 1.71428571em;
+  }
+
+  // No spacing
+  &__spacing-none {
+    height: auto;
+    line-height: normal;
+    padding: 0;
+  }
+
+  // this removes some inbuilt padding that Firefox adds
+  &::-moz-focus-inner {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "@atlaskit/reduced-ui-pack",
+  "version": "5.5.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "CSS classes which provide styling for a reduced number of AtlasKit components.",
+  "main": "dist/bundle.css",
+  "scripts": {
+    "prepublish": "lessc src/index.less dist/bundle.css && npm run sprite",
+    "sprite": "node ./bin/buildSprite.js",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/util-shared-styles": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@atlaskit/css-reset": "^1.0.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Sean C"
+    }
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@atlaskit/field-text": "^2.0.5",
+    "@atlaskit/util-readme": "^1.0.0",
+    "cheerio": "^0.22.0",
+    "glob": "^7.1.1",
+    "less": "^2.7.1",
+    "mkdirp": "^0.5.1",
+    "prop-types": "^15.5.10",
+    "svg-sprite": "^1.3.6",
+    "uid": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

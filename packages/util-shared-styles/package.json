@@ -1,0 +1,53 @@
+{
+  "name": "@atlaskit/util-shared-styles",
+  "version": "2.6.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "Shared styles for AtlasKit components",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.js",
+  "scripts": {
+    "prepublish": "node ./bin/generateJSVarsFromLess && cd ../.. && npm run prepublish/single @atlaskit/util-shared-styles",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "index.d.ts"
+  ],
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [],
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "devDependencies": {
+    "@atlaskit/tooltip": "^1.0.0",
+    "@atlaskit/util-readme": "^1.0.0",
+    "@atlaskit/util-shared-styles": "*",
+    "camelcase": "^3.0.0",
+    "classnames": "^2.2.5",
+    "clipboard": "^1.5.13",
+    "create-error": "^0.3.1",
+    "fs-extra": "^3.0.1",
+    "glob": "^7.1.2",
+    "javascript-natural-sort": "^0.7.1",
+    "less-vars-loader": "^1.1.0",
+    "less-vars-to-js": "^1.1.2",
+    "rgba-convert": "^0.3.0",
+    "uid": "0.0.2",
+    "wcag-contrast": "^0.1.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "styled-components": "^1.3.0"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui",
+    "internal"
+  ]
+}

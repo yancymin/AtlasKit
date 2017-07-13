@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/search" fill="currentColor">
+            <g id="search" transform="translate(6.000000, 6.000000)">
+                <path d="M9.88330353,8.82264336 L12.5303301,11.4696699 C12.8232233,11.7625631 13.0606602,12.0606602 12.5303301,12.5303301 C12,13 11.7625631,12.8232233 11.4696699,12.5303301 L8.82264336,9.88330353 C7.89956853,10.5841006 6.74835352,11 5.5,11 C2.46243388,11 0,8.53756612 0,5.5 C0,2.46243388 2.46243388,0 5.5,0 C8.53756612,0 11,2.46243388 11,5.5 C11,6.74835352 10.5841006,7.89956853 9.88330353,8.82264336 Z M5.5,9.5 C7.709139,9.5 9.5,7.709139 9.5,5.5 C9.5,3.290861 7.709139,1.5 5.5,1.5 C3.290861,1.5 1.5,3.290861 1.5,5.5 C1.5,7.709139 3.290861,9.5 5.5,9.5 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

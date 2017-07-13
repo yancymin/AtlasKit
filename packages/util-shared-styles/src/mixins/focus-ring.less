@@ -1,0 +1,12 @@
+@import '../colors.less';
+
+.focus-ring(@color: @ak-color-B100, @outline-width: 2px) {
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px @outline-width @color;
+  }
+}
+
+.no-focus-ring() {
+  box-shadow: none;
+}

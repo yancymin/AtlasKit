@@ -1,0 +1,39 @@
+{
+  "name": "@atlaskit/util-common-test",
+  "version": "2.0.1",
+  "config": {
+    "access": "public"
+  },
+  "description": "Shared test helpers used by AtlasKit components",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.js",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/util-common-test; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "custom-event-polyfill": "^0.3.0",
+    "keycode": "^2.1.4",
+    "uid": "^0.0.2"
+  },
+  "devDependencies": {
+    "ak-button": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui",
+    "internal"
+  ]
+}

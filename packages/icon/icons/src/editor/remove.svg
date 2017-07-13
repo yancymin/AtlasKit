@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/remove</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/remove" fill="currentColor">
+            <g id="remove" transform="translate(6.000000, 6.000000)">
+                <path d="M10.7777778,4 L9.10752869,11.5161209 C9.04814223,11.78336 8.77211952,12 8.50899482,12 L3.49100518,12 C3.21983051,12 2.95056152,11.7775269 2.89247131,11.5161209 L1.22222222,4 L10.7777778,4 Z M0,1.50468445 C0,1.22595492 0.229000568,1 0.500347316,1 L11.4996527,1 C11.7759869,1 12,1.21403503 12,1.50468445 L12,2.49531555 C12,2.77404508 11.7709994,3 11.4996527,3 L0.500347316,3 C0.224013124,3 0,2.78596497 0,2.49531555 L0,1.50468445 Z M4,0.5 C4,0.223857625 4.21505737,0 4.49047852,0 L7.50952148,0 C7.78040529,0 8,0.231933594 8,0.5 L8,1 L4,1 L4,0.5 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

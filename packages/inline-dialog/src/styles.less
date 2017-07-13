@@ -1,0 +1,23 @@
+@import '~@atlaskit/util-shared-styles/src/borders.less';
+@import '~@atlaskit/util-shared-styles/src/colors.less';
+@import '~@atlaskit/util-shared-styles/src/grid.less';
+
+@ak-panel-bg-color: @ak-color-N0; // #fff
+@ak-inline-dialog-border-color: @ak-color-N40; // This has not been confirmed by the ADG yet
+@ak-inline-dialog-border-radius: @ak-border-radius;
+@ak-inline-dialog-box-shadow: 0 4px 8px -2px fade(@ak-color-N900 , 28%), 0 0 1px fade(@ak-color-N900 , 30%);
+@ak-inline-dialog-content-padding: @ak-grid-size * 3;
+@ak-inline-dialog-max-height: @ak-grid-size * 60;
+@ak-inline-dialog-max-width: @ak-grid-size * 62;
+
+
+.inlineDialogContainer {
+  background: @ak-panel-bg-color;
+  border-radius: @ak-inline-dialog-border-radius;
+  border: 1px solid @ak-inline-dialog-border-color;
+  box-shadow: @ak-inline-dialog-box-shadow;
+  box-sizing: border-box; // so that our padding is taken into account for max-width
+  max-height: @ak-inline-dialog-max-height;
+  max-width: @ak-inline-dialog-max-width;
+  padding: @ak-inline-dialog-content-padding;
+}

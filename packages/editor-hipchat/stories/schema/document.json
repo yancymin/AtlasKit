@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Document schema for Atlassian Editor documents for HipChat.",
+  "type": "array",
+  "items": {
+    "anyOf": [
+      {
+        "$ref": "#/definitions/text_node"
+      },
+      {
+        "$ref": "#/definitions/mention_node"
+      }
+    ]
+  },
+  "definitions": {
+    "text_node": {
+      "properties": {
+        "text": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "text"
+          ]
+        },
+        "marks": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "#/definitions/link_mark"
+            }
+          ]
+        }
+      },
+      "required": [
+        "text",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "mention_node": {
+      "properties": {
+        "type": {
+          "enum": [
+            "mention"
+          ]
+        },
+        "attrs": {
+          "type": "object",
+          "properties": {
+            "id": {},
+            "displayName": {}
+          },
+          "required": [
+            "id",
+            "displayName"
+          ]
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "attrs",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "link_mark": {
+      "properties": {
+        "type": {
+          "enum": [
+            "link"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "attrs": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "attrs"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

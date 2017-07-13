@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>media-services/zoom-in</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media-services" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="media-services/zoom-in" fill="currentColor">
+            <g id="zoom-in">
+                <path d="M14.5,11.5 L12.5,11.5 L12.5,13.5 C12.5,14.052 12.052,14.5 11.5,14.5 C10.948,14.5 10.5,14.052 10.5,13.5 L10.5,11.5 L8.5,11.5 C7.948,11.5 7.5,11.052 7.5,10.5 C7.5,9.948 7.948,9.5 8.5,9.5 L10.5,9.5 L10.5,7.5 C10.5,6.948 10.948,6.5 11.5,6.5 C12.052,6.5 12.5,6.948 12.5,7.5 L12.5,9.5 L14.5,9.5 C15.052,9.5 15.5,9.948 15.5,10.5 C15.5,11.052 15.052,11.5 14.5,11.5 M19.708,18.278 L16.301,14.871 C17.353,13.716 18,12.185 18,10.5 C18,6.91 15.09,4 11.5,4 C7.91,4 5,6.91 5,10.5 C5,14.09 7.91,17 11.5,17 C12.681,17 13.786,16.68 14.74,16.129 C14.748,16.138 14.75,16.149 14.759,16.157 L18.294,19.693 C18.683,20.082 19.319,20.082 19.708,19.693 C20.097,19.304 20.097,18.667 19.708,18.278" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

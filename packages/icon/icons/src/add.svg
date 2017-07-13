@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="add" fill="currentColor">
+            <g>
+                <g>
+                    <rect id="Rectangle-4" x="11" y="3" width="2" height="18"></rect>
+                    <path d="M3.993,11 C3.445,11 3,11.448 3,12 C3,12.557 3.445,13 3.993,13 L20.007,13 C20.555,13 21,12.552 21,12 C21,11.444 20.555,11 20.007,11 L3.993,11 Z" id="Clip-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

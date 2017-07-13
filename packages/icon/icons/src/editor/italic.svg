@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/italic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/italic" fill="currentColor">
+            <g id="italic" transform="translate(7.000000, 6.000000)">
+                <path d="M2,0.504684448 C2,0.225954924 2.23079681,0 2.50043583,0 L9.49956417,0 C9.77594725,0 10,0.214035034 10,0.504684448 L10,1.49531555 C10,1.77404508 9.76920319,2 9.49956417,2 L2.50043583,2 C2.22405275,2 2,1.78596497 2,1.49531555 L2,0.504684448 Z M0,10.5046844 C0,10.2259549 0.230796814,10 0.500435829,10 L7.49956417,10 C7.77594725,10 8,10.214035 8,10.5046844 L8,11.4953156 C8,11.7740451 7.76920319,12 7.49956417,12 L0.500435829,12 C0.224052752,12 0,11.785965 0,11.4953156 L0,10.5046844 Z M5,2 L7,2 L5,10 L3,10 L5,2 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

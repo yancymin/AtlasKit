@@ -1,0 +1,128 @@
+@import '../node_modules/@atlaskit/util-shared-styles/src/colors.less';
+@import '../node_modules/@atlaskit/util-shared-styles/src/grid.less';
+
+@toggle-transition: 0.2s;
+@toggle-padding: @ak-grid-size / 4;
+@border-width: 2px;
+
+@toggle-bg-checked: @ak-color-G300;
+@toggle-bg-checked-disabled: #35B885;
+@toggle-slide-checked-disabled: #A1DCC4;
+
+@toggle-bg-unchecked: @ak-color-N80;
+@toggle-bg-unchecked-disabled: #f3f4f5;
+@toggle-slide-unchecked-disabled: #AFB6C2;
+
+.ak-field-toggle {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+
+  > label {
+    background-clip: content-box;
+    background-color: @toggle-bg-unchecked;
+    background-image:
+      data-uri('image/svg+xml;charset=UTF-8', './internal/toggle/check-enabled.svg'),
+      data-uri('image/svg+xml;charset=UTF-8', './internal/toggle/cross-enabled.svg');
+    background-repeat: no-repeat;
+    border: @border-width solid transparent;
+    color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    padding: @toggle-padding;
+    text-indent: -9999px;
+    transition:
+      background-color @toggle-transition,
+      border-color @toggle-transition;
+
+    &::before {
+      background: white;
+      content: "";
+      cursor: pointer;
+      display: block;
+      transition: transform @toggle-transition;
+    }
+  }
+
+  > input {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+
+    &:checked + label {
+      background-color: @toggle-bg-checked;
+    }
+
+    &:disabled + label {
+      background-color: @toggle-bg-unchecked-disabled;
+      background-image:
+        data-uri('image/svg+xml;charset=UTF-8', './internal/toggle/check-disabled.svg'),
+        data-uri('image/svg+xml;charset=UTF-8', './internal/toggle/cross-disabled.svg');
+      cursor: not-allowed;
+
+      &::before {
+        background-color: @toggle-slide-unchecked-disabled;
+        cursor: not-allowed;
+      }
+    }
+
+    &:checked:disabled + label {
+      background-color: @toggle-bg-checked-disabled;
+
+      &::before {
+        background-color: @toggle-slide-checked-disabled;
+      }
+    }
+
+    &:focus {
+      outline: none;
+
+      & + label {
+        border-color: @ak-color-B100;
+      }
+    }
+  }
+}
+
+// Helper function
+.toggleSize(@width, @height) {
+  @toggle-inner-height: @height - (@toggle-padding * 2);
+  @icon-height: @toggle-inner-height;
+
+  > label {
+    background-position:
+      (@toggle-padding * 2.5) (@toggle-padding * 2),
+      (@width - @icon-height - (@toggle-padding / 2)) (@toggle-padding * 2);
+    background-size: @icon-height @icon-height, @icon-height @icon-height;
+    border-radius: @height;
+    height: @height;
+    width: @width;
+
+    @circle-size: @toggle-inner-height;
+
+    &::before {
+      background: white;
+      border-radius: @circle-size;
+      content: "";
+      display: block;
+      height: @circle-size;
+      margin-left: @toggle-padding;
+      margin-top: @toggle-padding;
+      width: @circle-size;
+    }
+  }
+
+  > input:checked + label::before {
+    transform: translate(@width - @toggle-inner-height - (@toggle-padding * 2), 0);
+  }
+}
+
+.ak-field-toggle__size-large {
+  .toggleSize(@ak-grid-size * 5, @ak-grid-size * 2.5);
+}
+
+.ak-field-toggle__size-default {
+  .toggleSize(@ak-grid-size * 4, @ak-grid-size * 2);
+}

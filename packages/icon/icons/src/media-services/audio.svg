@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>audio</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="File-types" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="audio">
+            <g>
+                <rect id="Rectangle-5" fill="currentColor" x="4" y="4" width="16" height="16" rx="2"></rect>
+                <path d="M15,13.0853529 C14.8436105,13.0300771 14.6753177,13 14.5,13 C13.6715729,13 13,13.6715729 13,14.5 C13,15.3284271 13.6715729,16 14.5,16 C15.3284271,16 16,15.3284271 16,14.5 L16,10 L15,10 L15,13.0853529 Z M10,13.0853529 C9.84361054,13.0300771 9.67531771,13 9.5,13 C8.67157288,13 8,13.6715729 8,14.5 C8,15.3284271 8.67157288,16 9.5,16 C10.3284271,16 11,15.3284271 11,14.5 L11,10 L10,10 L10,13.0853529 Z M10,9 C10,8.44771525 10.4509752,8 10.990778,8 L15.009222,8 C15.5564136,8 16,8.44386482 16,9 L16,10 L10,10 L10,9 Z" id="Combined-Shape" fill="inherit"></path>
+            </g>
+        </g>
+    </g>
+</svg>

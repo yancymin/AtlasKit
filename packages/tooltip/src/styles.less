@@ -1,0 +1,62 @@
+// These styles will be inserted into a style tag inside
+// the shadow dom of each instance of the component
+@import '~@atlaskit/util-shared-styles/src/colors.less';
+@import '~@atlaskit/util-shared-styles/src/mixins/animations.less';
+
+@grid: 4;
+@fontSize: unit(3 * @grid, px);
+@lineHeight: (4 * @grid) / unit(@fontSize);
+@fontColor: white;
+@maxWidth: unit(105 * @grid, px); // ~420px
+@borderRadius: 3px;
+@leftAndRightTextPadding: unit(2 * @grid, px);
+@topAndBottomPadding: unit(@grid / 2, px);
+@marginDistance: unit(2 * @grid, px);
+@animationMovementDistance: (3 * @grid);
+@animationDelay: 0.1s;
+@animationTime: @animationDelay + 1s;
+
+
+
+.tooltip {
+  background-color: @ak-color-N900;
+  border-radius: @borderRadius;
+  box-sizing: border-box;
+  color: @fontColor;
+  font-size: @fontSize;
+  line-height: @lineHeight;
+  max-width: @maxWidth;
+  margin: @marginDistance;
+  padding: @topAndBottomPadding @leftAndRightTextPadding;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+//************** Animations ***************//
+
+// define the props to transform for each animation
+@slideUp: 'transform', 'translateY(XXpx)', @animationMovementDistance, 0;
+@slideDown: 'transform', 'translateY(XXpx)', -@animationMovementDistance, 0;
+@slideLeft: 'transform', 'translateX(XXpx)', @animationMovementDistance, 0;
+@slideRight: 'transform', 'translateX(XXpx)', -@animationMovementDistance, 0;
+@fadeIn: 'opacity', 'XX', 0, 1;
+
+// then create the keyframes for each
+.createBoldAnimation(@slideUp @fadeIn, 'slide-up');
+.createBoldAnimation(@slideDown @fadeIn, 'slide-down');
+.createBoldAnimation(@slideLeft @fadeIn, 'slide-left');
+.createBoldAnimation(@slideRight @fadeIn, 'slide-right');
+
+// and create classes to apply them
+.slideUpAnimation {
+  animation: slide-up @animationTime @animationDelay backwards;
+}
+.slideDownAnimation {
+  animation: slide-down @animationTime @animationDelay backwards;
+}
+.slideLeftAnimation {
+  animation: slide-left @animationTime @animationDelay backwards;
+}
+.slideRightAnimation {
+  animation: slide-right @animationTime @animationDelay backwards;
+}

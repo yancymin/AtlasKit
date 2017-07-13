@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>editor/align-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Editor" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="editor/align-left" fill="currentColor">
+            <g id="align-left" transform="translate(6.000000, 7.000000)">
+                <path d="M0,0.504684448 C0,0.225954924 0.229000568,0 0.500347316,0 L11.4996527,0 C11.7759869,0 12,0.214035034 12,0.504684448 L12,1.49531555 C12,1.77404508 11.7709994,2 11.4996527,2 L0.500347316,2 C0.224013124,2 0,1.78596497 0,1.49531555 L0,0.504684448 Z M0,4.50468445 C0,4.22595492 0.229000568,4 0.500347316,4 L11.4996527,4 C11.7759869,4 12,4.21403503 12,4.50468445 L12,5.49531555 C12,5.77404508 11.7709994,6 11.4996527,6 L0.500347316,6 C0.224013124,6 0,5.78596497 0,5.49531555 L0,4.50468445 Z M0,8.50468445 C0,8.22595492 0.227880478,8 0.491005182,8 L5.50899482,8 C5.78016949,8 6,8.21403503 6,8.50468445 L6,9.49531555 C6,9.77404508 5.77211952,10 5.50899482,10 L0.491005182,10 C0.219830508,10 0,9.78596497 0,9.49531555 L0,8.50468445 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+{
+  "name": "@atlaskit/util-cz-atlaskit-changelog",
+  "version": "1.2.2",
+  "config": {
+    "access": "public"
+  },
+  "description": "A utility for managing the changelog of atlaskit",
+  "main": "index.js",
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [],
+  "license": "Apache-2.0",
+  "scripts": {
+    "prepublish": ""
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "conventional-changelog": "^1.1.3",
+    "cz-lerna-changelog": "^1.2.1",
+    "lerna-semantic-release-analyze-commits": "^4.2.1",
+    "lerna-semantic-release-io": "^7.0.2",
+    "lerna-semantic-release-utils": "^4.0.15",
+    "npmconf": "^2.1.2",
+    "semantic-release": "^6.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui",
+    "internal"
+  ]
+}

@@ -1,0 +1,50 @@
+@import '~@atlaskit/util-shared-styles/src/colors.less';
+@size-default: 24px;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    margin: 10px;
+  }
+}
+
+.colored {
+  color: @ak-color-R500;
+  fill: @ak-color-R100;
+}
+
+.icon-unchecked {
+  color: @ak-color-N400;
+  fill: @ak-color-N400;
+}
+
+.icon-checked {
+  color: @ak-color-N400;
+  fill: @ak-color-N0;
+}
+
+.icon-reverse {
+  color: @ak-color-B50;
+  fill: @ak-color-N700;
+}
+
+.compare-icon-container {
+  position: relative;
+  padding: 0 @size-default @size-default 0;
+
+  // Show the red underlay icon if the icon is larger than the default size
+  & > * {
+    &:first-child {
+      position: absolute;
+      color: @ak-color-R500;
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      width: @size-default;
+      height: @size-default;
+      overflow: hidden;
+    }
+  }
+}

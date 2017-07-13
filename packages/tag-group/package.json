@@ -1,0 +1,56 @@
+{
+  "name": "@atlaskit/tag-group",
+  "version": "3.0.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component used for grouping and controlling @atlskit/tag components",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Tag Group"
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/tag-group; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Luke B"
+    },
+    {
+      "name": "Nadia M"
+    }
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@atlaskit/util-common": "^1.0.0",
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/avatar": "^2.0.0",
+    "@atlaskit/tag": "^2.0.0",
+    "react-router-dom": "^4.0.0",
+    "@atlaskit/tag-group": "*",
+    "lodash.uniq": "^4.5.0"
+  },
+  "peerDependencies": {
+    "@atlaskit/tag": "^2.0.0",
+    "react": "^15.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

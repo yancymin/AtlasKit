@@ -1,0 +1,53 @@
+{
+  "name": "@atlaskit/calendar",
+  "version": "2.0.13",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component that is a generic calendar.",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Calendar",
+    "pattern": true
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/calendar; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/icon": "^1.0.0",
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "babel-runtime": "^6.11.6",
+    "calendar-base": "^0.3.0",
+    "keycode": "^2.1.7",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/calendar": "*"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Trey S"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

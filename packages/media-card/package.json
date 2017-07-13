@@ -1,0 +1,82 @@
+{
+  "name": "@atlaskit/media-card",
+  "version": "17.9.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "Includes all media card related components, CardView, CardViewSmall, Card...",
+  "main": "dist/es5/index.js",
+  "jsnext:main": "dist/es2015/index.js",
+  "types": "dist/es5/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && npm run build || ../../node_modules/.bin/not-in-publish",
+    "build": "npm run build/es5 && npm run build/es2015",
+    "build/es5": "../../node_modules/.bin/tsc -p build/es5",
+    "build/es2015": "../../node_modules/.bin/tsc -p build/es2015",
+    "lint": "../../node_modules/.bin/tslint --project . '*.{ts,tsx,d.ts}' '{src,stories}/**/*.{ts,tsx,d.ts}'",
+    "validate/typescript": "../../build/bin/validate.typescript.sh",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@atlaskit/avatar": "^4.0.5",
+    "@atlaskit/badge": "^4.0.3",
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/dropdown-menu": "^1.10.0",
+    "@atlaskit/field-text": "^2.6.1",
+    "@atlaskit/icon": "^6.5.2",
+    "@atlaskit/lozenge": "^3.0.2",
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "@types/bytes": "^2.4.33",
+    "axios": "^0.15.3",
+    "babel-runtime": "^6.11.6",
+    "bytes": "^2.4.0",
+    "classnames": "^2.2.5",
+    "deep-equal": "^1.0.1",
+    "lodash.debounce": "^4.0.8",
+    "react-lazy-load-zz": "^3.0.14",
+    "react-transition-group": "^1.1.2",
+    "polished": "^1.1.0",
+    "styled-components": "^1.3.0",
+    "tslib": "^1.2.0"
+  },
+  "author": "Atlassian Pty. Ltd",
+  "maintainers": [
+    {
+      "name": "Hector Z"
+    },
+    {
+      "name": "Michael J"
+    },
+    {
+      "name": "James N"
+    }
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@atlaskit/media-core": "^8.0.0",
+    "react": "^15.3.2",
+    "rxjs": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "devDependencies": {
+    "@atlaskit/droplist": "^3.6.0",
+    "@atlaskit/media-core": "^8.0.0",
+    "@atlaskit/media-test-helpers": "^6.0.0",
+    "@atlaskit/field-radio-group": "^1.2.1",
+    "@atlaskit/field-range": "^2.0.0",
+    "@atlaskit/toggle": "^2.0.4",
+    "akutil-common-test": "*",
+    "deepcopy": "0.6.3"
+  },
+  "keywords": [
+    "media",
+    "ui"
+  ]
+}

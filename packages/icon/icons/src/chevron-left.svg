@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="chevron-left" fill="currentColor">
+            <g id="arrow-left">
+                <path d="M15.295,4.2915 L8.298,11.2885 C8.295,11.2905 8.294,11.2915 8.291,11.2935 C8.096,11.4875 7.999,11.7445 7.999,12.0015 C7.999,12.2585 8.096,12.5155 8.291,12.7105 C8.294,12.7115 8.296,12.7125 8.298,12.7145 L15.292,19.7085 C15.682,20.0985 16.317,20.0985 16.706,19.7085 C17.096,19.3195 17.096,18.6835 16.706,18.2945 L10.413,12.0015 L16.709,5.7065 C17.097,5.3175 17.097,4.6815 16.709,4.2915 C16.514,4.0975 16.259,3.9995 16.002,3.9995 C15.746,3.9995 15.489,4.0975 15.295,4.2915 Z" id="Clip-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

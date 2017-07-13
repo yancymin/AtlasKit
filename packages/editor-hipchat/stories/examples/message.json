@@ -1,0 +1,27 @@
+[
+  {
+    "type": "text",
+    "text": "asdfasdf ",
+    "marks": []
+  },
+  {
+    "type": "text",
+    "text": "www.google.com",
+    "marks": [
+      {
+        "type": "link",
+        "attrs": {
+          "url": "www.google.com"
+        }
+      }
+    ]
+  },
+  {
+    "type": "mention",
+    "text": "@OscarWallhult",
+    "attrs": {
+      "id": "655363:3ddf0886-bc87-42aa-b1ba-32e4991e99d8",
+      "displayName": "@OscarWallhult"
+    }
+  }
+]

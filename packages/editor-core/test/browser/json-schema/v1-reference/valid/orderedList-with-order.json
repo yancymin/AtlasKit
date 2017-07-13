@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "type": "doc",
+  "content": [
+    {
+      "type": "orderedList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "rule"
+            },
+            {
+              "type": "rule"
+            }
+          ]
+        }
+      ],
+      "attrs": {
+        "order": 3
+      }
+    }
+  ]
+}

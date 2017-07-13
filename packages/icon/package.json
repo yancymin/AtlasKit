@@ -1,0 +1,71 @@
+{
+  "name": "@atlaskit/icon",
+  "version": "7.0.1",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React package that contains icons",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Icon"
+  },
+  "scripts": {
+    "build": "node ./build/index.js",
+    "prepublish": "CLI=1 npm run build && cd ../.. && npm run prepublish/single @atlaskit/icon",
+    "lint": "../../node_modules/.bin/tslint --project . '*.{ts,tsx,d.ts}' '{src,stories}/**/*.{ts,tsx,d.ts}'",
+    "validate/typescript": "../../build/bin/validate.typescript.sh",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist",
+    "glyph",
+    "lib"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Luke B"
+    },
+    {
+      "name": "Jared C"
+    }
+  ],
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/button-group": "^1.0.0",
+    "@atlaskit/dynamic-table": "^3.0.0",
+    "@atlaskit/field-text": "^2.7.0",
+    "@atlaskit/icon": "*",
+    "@atlaskit/modal-dialog": "^2.1.1",
+    "@atlaskit/tooltip": "^1.2.0",
+    "@atlaskit/util-readme": "^3.1.0",
+    "@atlaskit/util-shared-styles": "^1.0.0",
+    "babel-core": "^6.24.1",
+    "classnames": "^2.2.5",
+    "fs-extra": "^3.0.1",
+    "glob": "^7.0.5",
+    "lodash.sample": "^4.2.1",
+    "prettier": "^1.3.1",
+    "svgo": "^0.7.0",
+    "uid": "^0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

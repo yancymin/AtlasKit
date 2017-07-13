@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>image-resize</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="image-resize" fill="currentColor">
+            <g id="Combined-Shape">
+                <path d="M17,8.24264069 L17,9.99 C17,10.5422847 17.4477153,10.99 18,10.99 C18.5522847,10.99 19,10.5422847 19,9.99 L19,6.1 C19,5.49271525 18.5072847,5 17.9,5 L14,5 C13.4477153,5 13,5.44771525 13,6 C13,6.55228475 13.4477153,7 14,7 L15.4142136,7 L7,15.4142136 L7,14 C7,13.447 6.552,13 6,13 C5.448,13 5,13.447 5,14 L5,17.89 C5,18.497 5.493,18.99 6.1,18.99 L10,18.99 C10.553,18.99 11,18.542 11,17.99 C11,17.438 10.553,16.99 10,16.99 L8.25264069,16.99 L17,8.24264069 Z M3,4.99508929 C3,3.8932319 3.8926228,3 4.99508929,3 L19.0049107,3 C20.1067681,3 21,3.8926228 21,4.99508929 L21,19.0049107 C21,20.1067681 20.1073772,21 19.0049107,21 L4.99508929,21 C3.8932319,21 3,20.1073772 3,19.0049107 L3,4.99508929 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

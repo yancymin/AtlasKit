@@ -1,0 +1,75 @@
+# make sure not to use && as a continuation in any of these steps unless you pair it with || exit 1
+# pipelines concats each of these commands into one script and runs that
+# if your command in the script list has && joining it, and any of the steps fail, the pipeline will still continue
+#
+# please either put those commands in a script in ./build/bin
+# or just place them in different items in the list i.e. change
+#           - foo && bar && baz
+# to
+#           - foo
+#           - bar
+#           - baz
+# or
+#           - foo && bar && baz || exit 1
+# or
+#           - ./build/bin/foo-bar-baz.bash
+
+image: atlassianlabs/atlaskit:2017-05-10
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - export FORCE_COLOR=1
+            - ./build/bin/setup.sh
+            - ./build/bin/prep_for_release.sh
+            - yarn
+            - (cd packages/website; yarn run build-data)
+            - ./build/bin/release.stop.pipeline.if.other.master.running.js
+            - run-p -ln "validate/package.json" "validate/typescript"
+            - run-p -ln "validate/tslint" "validate/eslint"
+            # --runInBand is used to make jest run in serial rather than parallel to prevent OOM
+            # --bail is used to make jest fail fast when it finds a test failure
+            - ./node_modules/.bin/jest --runInBand --bail -c ./build/jest.config.js
+            - run-p -ln "test" "test/base"
+            - yarn run browserstack/tunnel/start
+            - yarn run test/browserstack
+            - yarn run browserstack/tunnel/stop
+            - yarn run release/check/is-workspace-clean --silent
+            - yarn run release/check/can-ff --silent || exit 0
+            - npm run release
+            - run-p -ln "release/registry" "release/storybooks"
+            - yarn run release/announce
+            - ./build/bin/release.restart.last.stopped.pipeline.js
+          # caches:
+            # - node
+    invalidate-atlaskit-cache:
+      - step:
+          script:
+            - ./build/bin/cloudfront_invalidate.sh
+  default:
+    - step:
+        script:
+          - export FORCE_COLOR=1
+          - export CURRENT_BUILD_TIME=$(date +'%Y-%m-%d_%H_%m_%S')
+          - ./build/bin/setup.sh
+          # need to run this so we have access to the Bitbucket credentials during generate.changed.packages.file.pr.sh
+          - ./build/bin/prep_for_release.sh
+          - yarn
+          - (cd packages/website; yarn run build-data)
+          # we have to run this after `yarn` to have access to child-process-promise
+          - ./build/bin/generate.changed.packages.file.pr.sh
+          # if you find yourself running into out of memory errors, we can move more steps out of this parallel step
+          - run-p -ln "validate/package.json" "validate/typescript"
+          - run-p -ln "validate/tslint" "validate/eslint"
+          # --runInBand is used to make jest run in serial rather than parallel to prevent OOM
+          # --bail is used to make jest fail fast when it finds a test failure
+          - ./node_modules/.bin/jest --runInBand --bail -c ./build/jest.config.js
+          - run-p -ln "test" "test/base"
+          - yarn run browserstack/tunnel/start
+          - yarn run test/browserstack
+          - yarn run browserstack/tunnel/stop
+          - yarn run "pr/storybook"
+        # caches:
+          # - node
+

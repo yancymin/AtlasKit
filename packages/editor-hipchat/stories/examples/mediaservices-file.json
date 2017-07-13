@@ -1,0 +1,8 @@
+{
+  "type": "mediaservices-file",
+  "attrs": {
+    "id": "fileId",
+    "name": "file.txt",
+    "size": 4000
+  }
+}

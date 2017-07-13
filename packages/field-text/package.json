@@ -1,0 +1,55 @@
+{
+  "name": "@atlaskit/field-text",
+  "version": "3.0.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "Field Text Component",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.jsx",
+  "ak:component": {
+    "name": "Text Field"
+  },
+  "types": "src/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/field-text; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist",
+    "src/index.d.ts"
+  ],
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "dependencies": {
+    "@atlaskit/field-base": "^5.0.0",
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Ben W"
+    },
+    {
+      "name": "Matias C"
+    }
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@atlaskit/button": "^1.0.0",
+    "@atlaskit/util-readme": "^1.0.0",
+    "@atlaskit/field-text": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

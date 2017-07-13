@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>media-services/oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media-services" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="media-services/oval" fill-rule="nonzero" fill="currentColor">
+            <g id="oval">
+                <path d="M12,17 C15.3686986,17 18,14.6976113 18,12 C18,9.30238869 15.3686986,7 12,7 C8.63130136,7 6,9.30238869 6,12 C6,14.6976113 8.63130136,17 12,17 Z M12,19 C7.581722,19 4,15.8659932 4,12 C4,8.13400675 7.581722,5 12,5 C16.418278,5 20,8.13400675 20,12 C20,15.8659932 16.418278,19 12,19 Z" id="Oval-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

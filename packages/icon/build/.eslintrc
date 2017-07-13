@@ -1,0 +1,8 @@
+{
+  "extends": "@atlaskit/eslint-config-base",
+  "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "no-console": 0,
+    "prefer-object-spread/prefer-object-spread": 0
+  }
+}

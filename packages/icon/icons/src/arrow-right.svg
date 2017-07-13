@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="arrow-right" fill="currentColor">
+            <g id="arrow-right-long">
+                <path d="M12.292,4.2915 C11.903,4.6795 11.903,5.3165 12.292,5.7055 L17.586,10.9995 L4,10.9995 C3.45,10.9995 3,11.4495 3,11.9995 C3,12.5505 3.45,13.0005 4,13.0005 L17.586,13.0005 L12.289,18.2965 C11.9,18.6855 11.9,19.3215 12.289,19.7105 C12.678,20.1005 13.315,20.1005 13.703,19.7105 L20.702,12.7125 C20.704,12.7115 20.706,12.7095 20.709,12.7075 C20.903,12.5145 21,12.2565 21,11.9995 C21,11.7425 20.903,11.4855 20.709,11.2915 C20.706,11.2905 20.703,11.2885 20.701,11.2865 L13.706,4.2915 C13.512,4.0975 13.255,4.0005 12.999,4.0005 C12.743,4.0005 12.486,4.0975 12.292,4.2915 Z" id="Clip-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

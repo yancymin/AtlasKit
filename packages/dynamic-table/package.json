@@ -1,0 +1,51 @@
+{
+  "name": "@atlaskit/dynamic-table",
+  "version": "4.1.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "Table component with pagination and sorting functionality",
+  "main": "dist/bundle.js",
+  "webpack": "dist/bundle-cjs.js",
+  "ak:webpack:raw": "src/index.js",
+  "ak:component": {
+    "name": "Dynamic Table"
+  },
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && { cd ../.. && npm run prepublish/single @atlaskit/dynamic-table; } || ../../node_modules/.bin/not-in-publish",
+    "jest": "../../node_modules/.bin/jest -c ../../build/jest.config.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@atlaskit/pagination": "^3.1.0",
+    "@atlaskit/util-common": "^1.1.0",
+    "@atlaskit/util-shared-styles": "^1.0.1",
+    "babel-runtime": "^6.11.6",
+    "prop-types": "^15.5.10",
+    "styled-components": "^1.3.0"
+  },
+  "devDependencies": {
+    "@atlaskit/dynamic-table": "*",
+    "@atlaskit/util-readme": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Vitalii B"
+    }
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "ui"
+  ]
+}

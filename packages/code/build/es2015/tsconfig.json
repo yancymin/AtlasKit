@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "outDir": "../../dist/es2015",
+    "lib": ["dom", "es6"],
+    "target": "es2015"
+  },
+  "include": [
+    "../../src/**/*.ts",
+    "../../src/**/*.tsx"
+  ]
+}

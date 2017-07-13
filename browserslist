@@ -1,0 +1,15 @@
+# Browsers supported in Atlassian Cloud
+# This is used by [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
+# to automatically detected browser compatibility issues.
+
+# [Supported browser matrix](https://confluence.atlassian.com/cloud/supported-browsers-744721663.html)
+# [Format for browserlist](https://github.com/ai/browserslist)
+
+ie >= 11
+last 1 Edge version
+last 1 Firefox version
+last 1 Chrome version
+last 1 Safari version
+last 1 Android version
+last 1 ChromeAndroid version
+last 1 iOS version

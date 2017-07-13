@@ -1,0 +1,12 @@
+@import '~@atlaskit/util-shared-styles/src/colors.less';
+@button-spacing: 4px;
+
+.wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+
+  & > * {
+    flex: 1 0 auto;
+    margin: 0 @button-spacing/2;
+  }
+}

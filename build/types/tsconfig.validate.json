@@ -1,0 +1,10 @@
+{
+  // This configuration is intended for use by the `yarn run typescript/validate` command.
+  // It provides repo-wide .d.ts compilation checking, which is useful for non-TypeScript
+  // packages that wish to publish manually authored TypeScript declarations.
+  "extends": "./tsconfig.base",
+  "include": [
+    "../../packages/*/*.d.ts",
+    "../../packages/*/src/*.d.ts"
+  ]
+}

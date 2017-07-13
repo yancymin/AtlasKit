@@ -1,0 +1,13 @@
+version: '2'
+services:
+  aui-browserstack-tests:
+    container_name: aui-browserstack-tests
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app/
+    environment:
+      CHROME_BIN: '/usr/bin/xvfb-chrome'
+      BROWSERSTACK_KEY:
+      BROWSERSTACK_USERNAME:
+    command: 'yarn run test/browserstack/browserstack/ci'

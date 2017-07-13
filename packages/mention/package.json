@@ -1,0 +1,64 @@
+{
+  "name": "@atlaskit/mention",
+  "version": "7.2.0",
+  "config": {
+    "access": "public"
+  },
+  "description": "A React component used to display user profiles in a list for 'Mention' functionality",
+  "main": "dist/es5/index.js",
+  "jsnext:main": "dist/es2015/index.js",
+  "types": "dist/es5/index.d.ts",
+  "scripts": {
+    "prepublish": "../../node_modules/.bin/in-publish && npm run build || ../../node_modules/.bin/not-in-publish",
+    "build": "npm run build/es5 && npm run build/es2015",
+    "build/es5": "../../node_modules/.bin/tsc -p build/es5",
+    "build/es2015": "../../node_modules/.bin/tsc -p build/es2015",
+    "lint": "../../node_modules/.bin/tslint --project . '*.{ts,tsx,d.ts}' '{src,stories}/**/*.{ts,tsx,d.ts}'",
+    "validate/typescript": "../../build/bin/validate.typescript.sh"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@atlaskit/avatar": "^4.0.6",
+    "@atlaskit/icon": "^6.6.0",
+    "@atlaskit/lozenge": "^3.0.2",
+    "@atlaskit/tooltip": "^1.2.0",
+    "@atlaskit/util-common": "^1.0.0",
+    "@atlaskit/util-shared-styles": "^2.3.1",
+    "babel-runtime": "^6.11.6",
+    "js-search": "^1.4.2",
+    "styled-components": "^1.4.6",
+    "tslib": "^1.2.0",
+    "uid": "^0.0.2",
+    "xregexp": "^3.2.0"
+  },
+  "devDependencies": {
+    "@atlaskit/util-common-test": "1.0.2",
+    "fetch-mock": "^5.8.0"
+  },
+  "author": "Atlassian Pty. Ltd",
+  "maintainers": [
+    {
+      "name": "Craig P"
+    },
+    {
+      "name": "Julien H"
+    }
+  ],
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "ui",
+    "mention",
+    "fabric"
+  ]
+}

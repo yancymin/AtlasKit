@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>media-services/line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Media-services" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="media-services/line" fill-rule="nonzero" fill="currentColor">
+            <g id="line">
+                <path d="M4.85429121,19.8542912 C5.24440802,20.244408 5.87395649,20.2473639 6.26402232,19.857298 L19.857298,6.26402232 C20.2457542,5.87556613 20.247652,5.24765205 19.8542912,4.85429121 L19.1457088,4.14570879 C18.755592,3.75559198 18.1260435,3.75263615 17.7359777,4.14270198 L4.14270198,17.7359777 C3.75424579,18.1244339 3.75234795,18.752348 4.14570879,19.1457088 L4.85429121,19.8542912 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

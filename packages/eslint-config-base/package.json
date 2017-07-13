@@ -1,0 +1,35 @@
+{
+  "name": "@atlaskit/eslint-config-base",
+  "version": "2.0.5",
+  "config": {
+    "access": "public"
+  },
+  "author": "Atlassian Pty Ltd",
+  "maintainers": [
+    {
+      "name": "Alex R"
+    }
+  ],
+  "description": "The eslint configuration for AtlasKit components",
+  "license": "Apache-2.0",
+  "main": ".eslintrc",
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-runtime": "^6.11.6",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-compat": "^1.0.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-prefer-object-spread": "^1.1.0",
+    "eslint-plugin-react": "^6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/atlassian/atlaskit"
+  },
+  "keywords": [
+    "atlaskit",
+    "internal"
+  ]
+}

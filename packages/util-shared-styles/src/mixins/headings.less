@@ -1,0 +1,101 @@
+@import '../colors.less';
+@import '../fonts.less';
+@import '../grid.less';
+
+.adg-typography-h900 () {
+  @font-size: 35px;
+  @line-height: 40px;
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 6.5);
+}
+.adg-typography-h800 () {
+  @font-size: 29px;
+  @line-height: 32px; // might be tight
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 5);
+}
+.adg-typography-h700 () {
+  @font-size: 24px;
+  @line-height: 28px; // might be tight
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 3.5);
+}
+.adg-typography-h600 () {
+  @font-size: 20px;
+  @line-height: 24px; // might be tight
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 3.5);
+}
+.adg-typography-h500 () {
+  @font-size: 16px;
+  @line-height: 20px; // might be tight
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 600;
+  line-height: unit(@line-height / @font-size);
+  letter-spacing: -0.006em;
+  margin-top: (@ak-grid-size * 3);
+}
+.adg-typography-h400 () {
+  @font-size: 14px;
+  @line-height: 16px; // too tight
+
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-style: inherit;
+  font-weight: 600;
+  line-height: unit(@line-height / @font-size);
+  letter-spacing: -0.003em;
+  margin-top: (@ak-grid-size * 2);
+}
+.adg-typography-h300 () {
+  @font-size: 12px;
+  @line-height: 16px;
+
+  color: @ak-color-N300;
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-weight: 600;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 2.5);
+  text-transform: uppercase;
+}
+.adg-typography-h200 () {
+  @font-size: 12px;
+  @line-height: 16px;
+
+  color: @ak-color-N300;
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-weight: 600;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 2);
+}
+.adg-typography-h100 () {
+  @font-size: 12px;
+  @line-height: 16px;
+
+  color: @ak-color-N300;
+  font-size: unit(@font-size / @ak-font-size-default, em);
+  font-weight: normal;
+  line-height: unit(@line-height / @font-size);
+  margin-top: (@ak-grid-size * 2);
+}

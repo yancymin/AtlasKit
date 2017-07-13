@@ -1,0 +1,36 @@
+@import '~akutil-shared-styles/src/colors.less';
+@import '~akutil-shared-styles/src/grid.less';
+
+@border-width: @ak-grid-size / 4;
+
+.layer-positions {
+  tr:first-of-type {
+    border-bottom: @border-width solid @ak-color-N40;
+  }
+
+  tr:last-of-type {
+    border-top: @border-width solid @ak-color-N40;
+  }
+
+  td {
+    text-align: center;
+
+    &:first-of-type {
+      border-right: @border-width solid @ak-color-N40;
+      text-align: right;
+    }
+
+    &:last-of-type {
+      border-left: @border-width solid @ak-color-N40;
+      text-align: left;
+    }
+  }
+
+  .target {
+    font-weight: bold;
+  }
+
+  tbody {
+    border-bottom: none;
+  }
+}

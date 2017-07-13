@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>vid-backward</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="vid-backward" fill="currentColor">
+            <g>
+                <path d="M2.79109287,4.59668533 C2.35418434,4.26714512 2,4.44463086 2,5.00087166 L2,18.9991283 C2,19.5518945 2.36598969,19.7437007 2.82678783,19.4210079 L12.1732122,12.8757912 C12.6298345,12.5560227 12.6464688,12.0301467 12.2089071,11.7001138 L2.79109287,4.59668533 Z" id="Page-1" transform="translate(7.500000, 12.000000) scale(-1, 1) translate(-7.500000, -12.000000) "></path>
+                <path d="M10.7910929,4.59668533 C10.3541843,4.26714512 10,4.44463086 10,5.00087166 L10,18.9991283 C10,19.5518945 10.3659897,19.7437007 10.8267878,19.4210079 L20.1732122,12.8757912 C20.6298345,12.5560227 20.6464688,12.0301467 20.2089071,11.7001138 L10.7910929,4.59668533 Z" id="Page-1-Copy" transform="translate(15.500000, 12.000000) scale(-1, 1) translate(-15.500000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

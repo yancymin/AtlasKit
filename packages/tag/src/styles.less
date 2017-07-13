@@ -1,0 +1,137 @@
+@import 'shared-variables.less';
+@import '~@atlaskit/util-shared-styles/src/mixins/focus-ring.less';
+@import '~@atlaskit/util-shared-styles/src/mixins/animations.less';
+// There is an outdated grid value in shared-variables.less which wont conflict with this (different name)
+@import '~@atlaskit/util-shared-styles/src/grid.less';
+
+// Attention: The animation name removeAnimation is referenced in the JS AnimationWrapper
+.createBoldAnimation(@remove-animation, 'removeAnimation');
+
+.rootWrapper {
+  display: inline-block;
+}
+
+.chrome {
+  .focus-ring();
+  background-color: @ak-color-N20;
+  border-radius: @default-border-radius;
+  cursor:default;
+  display: flex;
+  flex-direction: row;
+  height: @tag-height;
+  line-height: 1;
+  margin: @ak-grid-size / 2;
+  padding: 0;
+
+  &:hover {
+    .no-focus-ring();
+    background-color: @ak-color-N30;
+
+    .button {
+      .focus-ring();
+    }
+  }
+
+  &.markedForRemoval {
+    background-color: @ak-color-R50;
+
+    .href, .text {
+      color: @ak-color-R500;
+    }
+  }
+
+  &:focus {
+    .href {
+      color: @ak-color-B400;
+    }
+  }
+
+  &.isRemovable {
+    .text, .href {
+      max-width: @max-text-width - @button-width;
+    }
+  }
+}
+
+.animationWrapper {
+  box-sizing: border-box;
+
+  &.isRemoving {
+    animation: removeAnimation @animation-duration forwards;
+    will-change: width;
+
+    .chrome {
+      overflow: hidden;
+    }
+  }
+
+  &.isRemoved {
+    width:0;
+    visibility:hidden;
+
+    .chrome {
+      overflow: hidden;
+    }
+  }
+}
+
+.text {
+  color: @ak-color-N700;
+  font-size: @font-size;
+  font-weight: normal;
+  line-height: 1;
+  margin-left: @ak-grid-size / 2;
+  margin-right: @ak-grid-size / 2;
+  padding: 2px 0;
+
+  // text truncation
+  max-width: @max-text-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.href {
+  .text();
+  text-decoration: none;
+
+  &:hover {
+    color: @ak-color-B400;
+  }
+}
+
+.button {
+  .focus-ring(@color: @ak-color-R300);
+  // this removes some inbuilt padding that Firefox adds (taken from reduced-ui-pack)
+  &::-moz-focus-inner {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  align-items: center;
+  appearance: none;
+  background: none;
+  border: none;
+  border-radius: @default-border-radius;
+  color: @ak-color-N500;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    color: @ak-color-R500;
+  }
+}
+
+.elemBefore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: @ak-grid-size * 0.5;
+}
+
+/* Used for both the Button and Chrome */
+&.rounded {
+  border-radius: @tag-height / 2;
+}
